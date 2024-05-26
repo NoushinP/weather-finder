@@ -1,0 +1,10 @@
+.container {
+    text-align: center;
+    color: blue;
+    background-color: white;
+}
+
+
+.top-section {
+    max-width: 1600px;
+}

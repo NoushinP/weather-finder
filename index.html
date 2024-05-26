@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Weather Finder</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Weather Finder</h1>
+    </header>
+
+    <div id="top-section">
+        <div class="row">
+            <aside class="aside">
+                <h2 class="search-section">
+                    Search a City
+                </h2>
+                
+                <form id="search-form" class="main-form">
+                    <div class="inputs">
+                        <input id="input" class="search"  type="text" placeholder="City">
+                        <div>
+                            <button type="submit" id="search-button" class="search-button-class">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="history"></div>
+            </aside>
+
+            <div id="today-results" class="search-results"></div>
+            <div id="forecast"></div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+        integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js"
+      integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w=="
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js"
+      integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg=="
+      crossorigin="anonymous"></script>
+      
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
